@@ -36,6 +36,4 @@ Explore, buy, sell, and rate dreams in a visually captivating platform inspired 
 - **Responsive Design** – Mobile-friendly layout.
 - **LUVUX Principles** – For an intuitive user experience.
 
----
 
-## 📂 Project Structure
