@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Dreams Inc. - Where Dreams Become Reality</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__brand">
+                <h1 class="logo">Neural Dreams Inc.</h1>
+            </div>
+            <div class="nav__links">
+                <a href="#home" class="nav__link">Home</a>
+                <a href="#marketplace" class="nav__link">Marketplace</a>
+                <a href="#dream-types" class="nav__link">Dream Types</a>
+                <a href="#lucid-lab" class="nav__link">Lucid Lab</a>
+                <a href="#dream-objects" class="nav__link">Dream Objects</a>
+                <a href="#random-facts" class="nav__link">Random Facts</a>
+                <a href="#interpretations" class="nav__link">Interpretations</a>
+            </div>
+            <div class="nav__actions">
+                <button class="btn btn--outline btn--sm">Login</button>
+                <button class="cart-btn" id="cartBtn">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero__background">
+            <div class="floating-element floating-1"></div>
+            <div class="floating-element floating-2"></div>
+            <div class="floating-element floating-3"></div>
+        </div>
+        <div class="hero__content">
+            <h1 class="hero__title">Where Dreams Become Reality</h1>
+            <p class="hero__subtitle">Buy, sell, and explore the infinite realm of human dreams</p>
+            <button class="btn btn--primary btn--lg hero__cta" onclick="document.getElementById('marketplace').scrollIntoView({behavior: 'smooth'})">
+                Enter the Dream Market
+            </button>
+        </div>
+    </section>
+
+    <!-- Marketplace Section -->
+    <section id="marketplace" class="marketplace">
+        <div class="container">
+            <h2 class="section-title">Dream Marketplace</h2>
+            
+            <!-- Filters -->
+            <div class="filters">
+                <select id="categoryFilter" class="form-control filter-select">
+                    <option value="">All Categories</option>
+                    <option value="nostalgic">Nostalgic</option>
+                    <option value="surreal">Surreal</option>
+                    <option value="transformative">Transformative</option>
+                    <option value="spiritual">Spiritual</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="cosmic">Cosmic</option>
+                </select>
+                <select id="lucidityFilter" class="form-control filter-select">
+                    <option value="">All Lucidity Levels</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+
+            <!-- Dream Cards Grid -->
+            <div class="dreams-grid" id="dreamsGrid">
+                <!-- Dream cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Dream Types Section -->
+    <section id="dream-types" class="dream-types">
+        <div class="container">
+            <h2 class="section-title">Types of Dreams</h2>
+            <div class="dream-types-grid" id="dreamTypesGrid">
+                <!-- Dream type cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lucid Dreamers Section -->
+    <section id="lucid-lab" class="lucid-lab">
+        <div class="container">
+            <h2 class="section-title">Featured Lucid Dreamers</h2>
+            <div class="dreamers-grid" id="dreamersGrid">
+                <!-- Lucid dreamer cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Dream Objects Section -->
+    <section id="dream-objects" class="dream-objects">
+        <div class="container">
+            <h2 class="section-title">Dream Objects & Symbols</h2>
+            <div class="objects-grid" id="objectsGrid">
+                <!-- Dream object cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Random Facts Section -->
+    <section id="random-facts" class="random-facts">
+        <div class="container">
+            <h2 class="section-title">Dream Facts Generator</h2>
+            <div class="facts-container">
+                <button class="btn btn--primary facts-btn" id="generateFactBtn">
+                    Generate Random Dream Fact
+                </button>
+                <div class="fact-display" id="factDisplay">
+                    <p class="fact-text" id="factText">Click the button to discover amazing dream facts!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dream Interpretations Section -->
+    <section id="interpretations" class="interpretations">
+        <div class="container">
+            <h2 class="section-title">Dream Symbol Interpretations</h2>
+            <div class="interpretation-search">
+                <input type="text" id="symbolSearch" class="form-control" placeholder="Search for a dream symbol...">
+                <button class="btn btn--primary search-btn" id="searchBtn">Search</button>
+            </div>
+            <div class="symbols-grid" id="symbolsGrid">
+                <!-- Symbol interpretation cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Neural Dreams Inc.</h3>
+                    <p>Where consciousness meets commerce</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#marketplace">Marketplace</a></li>
+                        <li><a href="#dream-types">Dream Types</a></li>
+                        <li><a href="#lucid-lab">Lucid Lab</a></li>
+                        <li><a href="#interpretations">Interpretations</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Connect</h4>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Subscribe to Dream Weekly" class="form-control">
+                        <button class="btn btn--primary btn--sm">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Neural Dreams Inc. - Where consciousness meets commerce</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal hidden" id="cartModal">
+        <div class="modal__overlay" onclick="closeCart()"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>Dream Cart</h3>
+                <button class="modal__close" onclick="closeCart()">&times;</button>
+            </div>
+            <div class="modal__body" id="cartItems">
+                <!-- Cart items will be populated by JavaScript -->
+            </div>
+            <div class="modal__footer">
+                <div class="cart-total" id="cartTotal">Total: $0.00</div>
+                <button class="btn btn--primary btn--full-width">Proceed to Dream Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dream Detail Modal -->
+    <div class="modal hidden" id="dreamModal">
+        <div class="modal__overlay" onclick="closeDreamModal()"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 id="dreamModalTitle">Dream Details</h3>
+                <button class="modal__close" onclick="closeDreamModal()">&times;</button>
+            </div>
+            <div class="modal__body" id="dreamModalBody">
+                <!-- Dream details will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
